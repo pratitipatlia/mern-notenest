@@ -1,7 +1,7 @@
-import Express from "Express"
+import express from "express"
 import { createNote, getNoteById,deleteNote, getAllNotes, updateNote } from "../controllers/notesController.js";
 
-const router = Express.Router();
+const router = express.Router();
 
 router.get("/",getAllNotes);
 router.get("/:id", getNoteById);
